@@ -3,14 +3,10 @@ body {
     ;
 }
 
-
-
 h3 {
-    font-family: 'Montserrat ', sans-serif;
+    font-family: 'Montserrat-bold ';
     font-size: 1.5rem;
     font-weight: bolder;
-
-
 }
 
 p {
@@ -24,12 +20,15 @@ p {
 }
 
 .title-h1 {
-    font-family: 'Montserrat ', sans-serif;
+    font-family: 'Montserrat-bold ', sans-serif;
     font-size: 3.7rem;
     font-weight: 900;
 
 }
 
+.container-fluid {
+    padding: 3% 15% 7%;
+}
 
 .navbar {
 
@@ -48,7 +47,8 @@ p {
 }
 
 .container {
-    padding: 3% 15%;
+    padding: 3% 15% 13%;
+    ;
 }
 
 .navbar-brand {
@@ -67,12 +67,22 @@ p {
 /*tittle image*/
 .tittle-image {
     width: 60%;
-    transform: rotate(20deg);
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+.position {
+    position: relative;
 }
 
 /*features section*/
 #features {
     padding: 7% 5%;
+    background-color: #fff;
+    position: relative;
+
+
 }
 
 .feature-box {
@@ -123,4 +133,48 @@ p {
 .press-logo {
     width: 15%;
     margin: 20px 20px 5%;
+}
+
+/*Pricing*/
+.pricing {
+    padding: 100px;
+    text-align: center;
+
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+@media (max-width:1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .tittle-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+
+}
+
+.cta {
+    background-color: #ff4c68;
+    padding: 7% 15%;
+    text-align: center;
+    color: #fff;
+    font-family: "Monserrat-black";
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+
+.footer {
+
+    text-align: center;
+    padding: 5%
+}
+
+.social-icon {
+    margin: 20px 10px;
 }
